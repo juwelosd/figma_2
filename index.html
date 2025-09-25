@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!--=== custom===tailwind====setup===started===here== -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-gray: #353749;
+        --color-primary-blue: #0c1634;
+        --color-secondary-blue: #193071;
+        --color-secondary-gray: #b1b2b9;
+        --color-light-blue: #3990a9;
+        --color-primary-red: #cc1609;
+        --color-secondary-red: #cb5549;
+        --color-primary-cyan: #968b7c;
+        --color-secondary-white: #f9f9f9;
+
+        --shadow-primary: 0 4px 25px -4px rgba(0, 0, 0, 0.1);
+        --shadow-secondary: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+        --breakpoint-xs: 375px;
+        --breakpoint-sm: 480px;
+        --breakpoint-md: 576px;
+        --breakpoint-lg: 768px;
+        --breakpoint-xl: 1024px;
+        --breakpoint-2xl: 1320px;
+
+        --container-max-width: 1320px;
+        --container-padding-x: 1rem;
+      }
+
+      .container {
+        max-width: var(--container-max-width);
+        padding-left: var(--container-padding-x);
+        padding-right: var(--container-padding-x);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    <!--=== custom===tailwind====setup===end===here== -->
+  </head>
+  <body>
+    <!-- ====navbar====start====here=== -->
+    <nav class="h-auto w-auto py-[26px] bg-primary-gray">
+      <div class="container flex flex-row justify-between">
+        <div class="flex flex-row items-center gap-x-4">
+          <img
+            src="assets/logo.png"
+            alt=""
+            srcset=""
+            class="w-12 h-12 object-cover rounded-[8px]"
+          />
+          <h4 class="text-[#CC1609] text-2xl">FileWisely</h4>
+        </div>
+        <ul class="flex flex-row items-center gap-x-8">
+          <li class="text-lg font-[590] text-[#CB5549]">
+            <a href="#">About</a>
+          </li>
+          <li class="text-lg font-[590] text-[#CB5549]">
+            <a href="#">How it works</a>
+          </li>
+          <li class="text-lg font-[590] text-[#CB5549]">
+            <a href="#">Testimonial</a>
+          </li>
+          <li></li>
+        </ul>
+
+        <div class="flex flex-row items-center gap-x-3">
+          <button
+            class="h-auto w-auto py-4 px-[40.5px] text-white bg-primary-red border-[1px] border-transparent ease-in-out duration-500 rounded-[8px] hover:border-solid hover:border-primary-red hover:text-primary-red hover:bg-transparent cursor-pointer text-base font-[590]"
+          >
+            Register
+          </button>
+          <button
+            class="h-auto w-auto py-4 px-[40.5px] text-white bg-primary-red border-[1px] border-transparent ease-in-out duration-500 rounded-[8px] hover:border-solid hover:border-primary-red hover:text-primary-red hover:bg-transparent cursor-pointer text-base font-[590]"
+          >
+            Sign in
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- ====navbar====start====here=====-->
+
+    <!-- ====hero===section====start====here=== -->
+    <section
+      style="
+        background-image: url(assets/hero-img.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+      class="w-full h-[851px]"
+    >
+      <div class="container flex flex-col gap-y-10 pt-[52px] items-start">
+        <div class="lex flex-col gap-y-5">
+          <h1 class="text-[74px] text-secondary-red font-bold leading-[130%] max-w-[694px]">
+            Whoo Whoo here and we are ready
+          </h1>
+          <p class="max-w-[779px] text-primary-cyan text-[28px] font-normal">
+            Al-powered help for claims, policy storage, and disaster readiness all in one secure
+            vault.
+          </p>
+        </div>
+        <button
+          class="h-auto w-auto py-3 px-6 text-white bg-primary-red border-[1px]
+           border-transparent ease-in-out duration-500 rounded-[8px] hover:border-solid
+            hover:border-primary-red hover:text-primary-red hover:bg-transparent 
+            cursor-pointer text-base font-[590]"
+        >
+          Sign in
+        </button>
+      </div>
+       
+    </section>
+    <!-- ====hero===section====end==== here===-->
+  </body>
+</html>
